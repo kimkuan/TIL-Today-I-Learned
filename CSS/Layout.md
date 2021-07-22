@@ -54,7 +54,7 @@ block
 - 주변 텍스트나 인라인 요소가 주위를 감싸는 특징이 있다.
 - 대부분 요소의 display 값을 block으로 변경한다. (단, display 값 변경예외 : inline-table, flex 등)
 
-<img src="https://raw.githubusercontent.com/kimkuan/TIL-Today-I-Learned/main/img/image-20210723000944460.png" alt="image-20210723000944460" width="70%" />
+<img src="https://raw.githubusercontent.com/kimkuan/TIL-Today-I-Learned/main/img/image-20210723000944460.png" alt="image-20210723000944460" width="60%" />
 
 
 
@@ -78,7 +78,7 @@ block
 * 항상 float 속성과 함께 따라다니는 속성!
 * clear 속성은 **block level 요소에만** 적용이 가능하다.
 
-<img src="https://raw.githubusercontent.com/kimkuan/TIL-Today-I-Learned/main/img/image-20210723000814116.png" alt="image-20210723000814116" width="70%"/>
+<img src="https://raw.githubusercontent.com/kimkuan/TIL-Today-I-Learned/main/img/image-20210723000814116.png" alt="image-20210723000814116" width="60%"/>
 
 ```html
 <div class="container">
@@ -94,7 +94,7 @@ block
 
 
 
-<img src="https://raw.githubusercontent.com/kimkuan/TIL-Today-I-Learned/main/img/image-20210723000855713.png" alt="image-20210723000855713" width="70%" />
+<img src="https://raw.githubusercontent.com/kimkuan/TIL-Today-I-Learned/main/img/image-20210723000855713.png" alt="image-20210723000855713" width="60%" />
 
 ```html
 <div class="container">
