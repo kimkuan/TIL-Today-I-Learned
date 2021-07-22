@@ -34,3 +34,74 @@ block
 
 
 
+### Float 속성
+
+: 레이아웃 흐름을 벗어나 요소를 띄우는 속성
+
+
+
+[ 속성 값 ]
+
+- none - float 시키지 않음. (default)
+- left - 좌측으로 float 시킴
+- right - 우측으로 float 시킴
+
+
+
+[ 설명 ]
+
+- 요소를 보통의 흐름에서 벗어나 띄어지게 한다.
+- 주변 텍스트나 인라인 요소가 주위를 감싸는 특징이 있다.
+- 대부분 요소의 display 값을 block으로 변경한다. (단, display 값 변경예외 : inline-table, flex 등)
+
+<img src="C:\Users\multicampus\AppData\Roaming\Typora\typora-user-images\image-20210722233732551.png" alt="image-20210722233732551" width="70%" />
+
+
+
+### Clear 속성
+
+: 요소를 floating된 요소의 영향에서 벗어나게 하는 속성 
+
+
+
+[ 속성 값 ]
+
+* none - 양쪽으로 floating 요소를 허용. (default)
+* left - 왼쪽으로 floating 요소를 허용하지 않음. 
+* right - 오른쪽으로 floating 요소를 허용하지 않음. 
+* both - 양쪽으로 floating 요소를 허용하지 않음. 
+
+
+
+[ 설명 ]
+
+* 항상 float 속성과 함께 따라다니는 속성!
+* clear 속성은 **block level 요소에만** 적용이 가능하다.
+
+<img src="C:\Users\multicampus\AppData\Roaming\Typora\typora-user-images\image-20210722235441660.png" alt="image-20210722235441660" width="70%" />
+
+```html
+<div class="container">
+    <div style="float: left">Box1</div>
+    <div style="float: left">Box2</div>
+</div>
+<h2>주변 텍스트나 인라인요소가 주위를 감싸는 특징이 있음.</h2>
+```
+
+- 다음과 같이 float 속성은 주변 요소들에게도 영향을 미친다. 
+
+- 따라서 float은 부모가 감싸는 영역에서만 적용될 수 있도록 clear 속성을 꼭 사용해주어야 한다.
+
+
+
+<img src="C:\Users\multicampus\AppData\Roaming\Typora\typora-user-images\image-20210722235746618.png" alt="image-20210722235746618" width="70%" />
+
+```html
+<div class="container">
+    <div style="float: left">Box1</div>
+    <div style="float: left">Box2</div>
+    <span style="display:block;clear=both;"></span> <!-- display는 block이어야함. 주의! -->
+</div>
+<h2>주변 텍스트나 인라인요소가 주위를 감싸는 특징이 있음.</h2>
+```
+
