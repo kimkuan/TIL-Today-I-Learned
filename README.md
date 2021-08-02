@@ -13,5 +13,5 @@
 
 - CSS
   - [레이아웃](https://github.com/kimkuan/TIL-Today-I-Learned/blob/main/CSS/Layout.md)
-  - [스토리지](https://github.com/kimkuan/TIL-Today-I-Learned/blob/main/Storage/Cookie.md)
+  - [스토리지](https://github.com/kimkuan/TIL-Today-I-Learned/blob/main/Storage)
 
